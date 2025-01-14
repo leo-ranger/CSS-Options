@@ -1,0 +1,28 @@
+.detailPagePrimaryContainer::before{
+background: linear-gradient(to right, #bcbcbc, #a7b4b7, #beb5a5, #adbec2, #b9c7cb);
+}
+
+.detailPageSecondaryContainer::before{
+background: linear-gradient(to bottom, rgba(192, 212, 222, 0.94), rgba(235, 250, 254, 0.94), rgba(227, 220, 212, 0.94), rgba(206, 214, 216, 0.94), rgba(192, 211, 218, 0.94));
+}
+
+
+.detailPageWrapperContainer{
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p.overview.detail-clamp-text{
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.sectionTitleContainer-cards{
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x {
+  background: linear-gradient(to right, 
+    rgba(188, 188, 188, 0.55),  /* #bcbcbc with 55% opacity */
+    rgba(167, 180, 183, 0.55),  /* #a7b4b7 with 55% opacity */
+    rgba(190, 181, 165, 0.55),  /* #beb5a5 with 55% opacity */
+    rgba(173, 190, 194, 0.55),  /* #adbec2 with 55% opacity */
+    rgba(185, 199, 203, 0.55)   /* #b9c7cb with 55% opacity */
+  );
