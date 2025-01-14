@@ -1,3 +1,12 @@
+/* APPLE TV Theme Corrections */
+.pageTabContent.is-active::before{
+  background: linear-gradient(to right, #bcbcbc, #a7b4b7, #beb5a5, #adbec2, #b9c7cb);
+}
+
+.backgroundContainer.withBackdrop{
+  opacity: 45%;
+}
+
 .detailPagePrimaryContainer::before{
 background: linear-gradient(to right, #bcbcbc, #a7b4b7, #beb5a5, #adbec2, #b9c7cb);
 }
@@ -19,7 +28,6 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x {
-  opacity: 45%;
   background: linear-gradient(to right, 
     rgba(188, 188, 188, 0.55),  /* #bcbcbc with 55% opacity */
     rgba(167, 180, 183, 0.55),  /* #a7b4b7 with 55% opacity */
