@@ -1,37 +1,95 @@
 /* APPLE TV Theme Corrections */
-.pageTabContent.is-active::before{
-  background: linear-gradient(to right, #bcbcbc, #a7b4b7, #beb5a5, #adbec2, #b9c7cb);
+html.preload.layout-desktop body.force-scroll.withSectionTabs.libraryDocument div#reactRoot div.mainAnimatedPages.skinBody div#liveTvSuggestedPage.page.libraryPage.liveTvPage.pageWithAbsoluteTabs.withTabs.mainAnimatedPage div.liveTvContainer div#guideTab.pageTabContent.flexPageTabContent.absolutePageTabContent.is-active.tvguide.pageTabContent.is-active::before {
+  background: linear-gradient(to bottom, rgba(192, 212, 222, 0.94), rgba(235, 250, 254, 0.94), rgba(227, 220, 212, 0.94), rgba(206, 214, 216, 0.94), rgba(192, 211, 218, 0.94));
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.backgroundContainer.withBackdrop{
-  opacity: 45%;
+.layout-desktop .tvGuideHeader {
+  margin-bottom: 1em;
+  z-index: 3;
+  background: linear-gradient(to bottom, rgba(192, 212, 222, 0.94), rgba(235, 250, 254, 0.94), rgba(227, 220, 212, 0.94), rgba(206, 214, 216, 0.94), rgba(192, 211, 218, 0.94));
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: -1%;
+  margin-top: -1%;
+  background-attachment: fixed;
+  background-size: 100vw;
+  opacity: 0.925;
+  filter: brightness(90%);
+  width: 101%;
 }
 
-.detailPagePrimaryContainer::before{
-background: linear-gradient(to right, #bcbcbc, #a7b4b7, #beb5a5, #adbec2, #b9c7cb);
+.layout-desktop .homeSectionsContainer {
+  background: linear-gradient(to bottom, rgba(192, 212, 222, 0), rgb(235, 250, 254), rgb(227, 220, 212), rgb(206, 214, 216), rgb(192, 211, 218),rgb(235, 250, 254), rgb(227, 220, 212), rgb(206, 214, 216), rgb(192, 211, 218),rgb(235, 250, 254), rgb(227, 220, 212), rgb(206, 214, 216), rgb(192, 211, 218),rgb(235, 250, 254), rgb(227, 220, 212), rgb(206, 214, 216), rgb(192, 211, 218));
 }
 
-.detailPageSecondaryContainer::before{
-background: linear-gradient(to bottom, rgba(192, 212, 222, 0.99), rgba(235, 250, 254, 0.99), rgba(227, 220, 212, 0.99), rgba(206, 214, 216, 0.99), rgba(192, 211, 218, 0.99));
+.backgroundContainer.withBackdrop {
+  background: linear-gradient(to bottom, rgba(192, 212, 222, 0.94), rgba(235, 250, 254, 0.94), rgba(227, 220, 212, 0.94), rgba(206, 214, 216, 0.94), rgba(192, 211, 218, 0.94));
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 60%;
 }
 
-
-.detailPageWrapperContainer{
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.detailPagePrimaryContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(192, 212, 222, 0.94), rgba(235, 250, 254, 0.94), rgba(227, 220, 212, 0.94), rgba(206, 214, 216, 0.94), rgba(192, 211, 218, 0.94));
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  filter: saturate(65%) brightness(95%) contrast(100%);
 }
 
-p.overview.detail-clamp-text{
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.detailPageSecondaryContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(192, 212, 222, 0.94), rgba(235, 250, 254, 0.94), rgba(227, 220, 212, 0.94), rgba(206, 214, 216, 0.94), rgba(192, 211, 218, 0.94));
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  opacity: 1.0;
+  z-index: -1;
+  filter: saturate(75%) brightness(95%) contrast(60%);
 }
-.sectionTitleContainer-cards{
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+.pageTabContent.is-active::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(192, 212, 222, 0.94), rgba(235, 250, 254, 0.94), rgba(227, 220, 212, 0.94), rgba(206, 214, 216, 0.94), rgba(192, 211, 218, 0.94));
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.825;
+  filter: brightness(90%);
+  z-index: -1;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x {
-  background: linear-gradient(to right, 
-    rgba(188, 188, 188, 0.55),  /* #bcbcbc with 55% opacity */
-    rgba(167, 180, 183, 0.55),  /* #a7b4b7 with 55% opacity */
-    rgba(190, 181, 165, 0.55),  /* #beb5a5 with 55% opacity */
-    rgba(173, 190, 194, 0.55),  /* #adbec2 with 55% opacity */
-    rgba(185, 199, 203, 0.55)   /* #b9c7cb with 55% opacity */
-  );
+  position: fixed;
+  left: 4.15em;
+  width: 17.85em;
+  justify-content: space-evenly;
+  top: 28.28em;
+  z-index: 2;
+  background: #d7e0e4;
+  border-radius: 0em;
+  margin: 1.25em 0;
+}
+
+.skinHeader-withBackground {
+  background-color: #e8efee !important;
+
+.formDialogHeader:not(.formDialogHeader-clear),
+.skinHeader-withBackground {
+  color: rgb(255, 255, 255);
+}
+
