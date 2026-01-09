@@ -606,13 +606,27 @@ display: none;
 overflow: auto !important;
 }
 
+#castContent 
+.card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata 
+.cardBox.cardBox-bottompadded 
+.cardScalable,
+#guestCastCollapsible 
+.card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata 
+.cardBox.cardBox-bottompadded 
+.cardScalable {
+  background-image: url('/web/Universal_assets/unknown.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.detailRibbon {
+  padding-top: 10px !important;
+}
+
 /* =========================================================
    Block Backend sorting folder
    ========================================================= */
-
-.verticalSection.emby-scroller-container:has(a[href="#/movies?topParentId=d8172ea9f6a9c9edfa13153083a90c39&collectionType=movies&tab=1"]) {
-  display: none !important;
-}
 
 .homeScreenSettingsContainer.padded-left.padded-right.padded-bottom-page .verticalSection.verticalSection-extrabottompadding .paperList.viewOrderList .listItem.viewItem[data-viewid="d8172ea9f6a9c9edfa13153083a90c39"] {
   display: none !important;
@@ -624,8 +638,16 @@ label.emby-checkbox-label:has(input[data-folderid="d8172ea9f6a9c9edfa13153083a90
 .verticalSection:has(input[data-folderid="d8172ea9f6a9c9edfa13153083a90c39"]) {
   display: none !important;
 }
+
 /* =========================================================
-   Adjust per theme Apple TV
+   Block feture bar from webos
+   ========================================================= */
+html.webos .layout-tv #slides-container {
+  display: none !important;
+}
+
+/* =========================================================
+   Adjust per theme - Apple TV
    ========================================================= */
 
 #JellyfinEnhancedPage.page.type-interior.pluginConfigurationPage.mainAnimatedPage{
@@ -701,11 +723,52 @@ background: rgba(213, 233, 242, 0.8) !important;
 .navMenuOption.lnkMediaFolder.btnSettings{
   display: none;
 }
-#homeTab.tabContent.pageTabContent.is-active .sections.homeSectionsContainer .cardBox {
-  background: rgba(0,0,0,.2);
+
+#homeTab.tabContent.pageTabContent.is-active .sections.homeSectionsContainer .cardBox, .cardBox.cardBox-bottompadded {
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(191, 235, 255, 0.91) );
   border-radius: 10px;
   box-shadow: 0 0 .5em rgba(0,0,0,.75);
   margin: .5em 1.5em 1.5em 0 !important;
   overflow: hidden;
   transition: background .1s;
+}
+
+#liveTvSuggestedPage .cardBox.cardBox-bottompadded{
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(191, 235, 255, 0.91) );
+  border-radius: 10px;
+  box-shadow: 0 0 .5em rgba(0,0,0,.75);
+  margin: .5em 1.5em 1.5em 0 !important;
+  overflow: hidden;
+  transition: background .1s;
+}
+
+#castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .cardBox.cardBox-bottompadded, #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .cardBox.cardBox-bottompadded{
+background: linear-gradient( rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3), rgba(196, 255, 191, 0.91) );
+  border-radius: 10px;
+  box-shadow: 0 0 .5em rgba(0,0,0,.75);
+  margin: .5em 1.5em 1.5em 0 !important;
+  overflow: hidden;
+  transition: background .1s;
+}
+#homeTab .sections.homeSectionsContainer .cardBox:has(a[href="#/livetv?collectionType=livetv"]) {
+  background: linear-gradient(rgba(213, 213, 213, 0.3), rgb(16, 77, 123), rgb(16, 77, 123), rgba(16, 123, 113, 0.53), rgb(18, 77, 119), rgba(27, 255, 148, 0.39) ) !important;
+color: white;
+}
+
+.layout-tv #homeTab.tabContent.pageTabContent.is-active .sections.homeSectionsContainer .verticalSection:has(h2[class="sectionTitle sectionTitle-cards">Recently Added in Boxsets (Backend)]) {
+display: none;
+}
+
+/* =========================================================
+   Don't edit !!!!
+   ========================================================= */
+.availableImagesList.vertical-wrap.centered .card.scalableCard.imageEditorCard.portraitCard.portraitCard-scalable .cardBox.visualCardBox .cardFooter.visualCardBox-cardFooter .cardText.cardTextCentered{
+display: list-item !important;
+}
+
+.imageEditorCard.portraitCard.portraitCard-scalable .cardBox.visualCardBox .cardFooter.visualCardBox-cardFooter .cardText.cardTextCentered{
+display: list-item !important;
+}
+.cardBox.visualCardBox .cardFooter.visualCardBox-cardFooter .cardText.cardTextCentered{
+	display: list-item !important;
 }
