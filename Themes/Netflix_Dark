@@ -1,0 +1,146 @@
+/* =========================================================
+   Adjust per theme - Netflix
+   ========================================================= */
+
+#JellyfinEnhancedPage.page.type-interior.pluginConfigurationPage.mainAnimatedPage{
+  color: #000 !important;
+}
+
+:root {
+  --w-color: #b7bfb587;
+.layout-tv .detailRibbon {
+  position: relative;
+  background: transparent;
+}
+
+
+.countIndicator, .fullSyncIndicator, .mediaSourceIndicator{
+background: left linear-gradient(#f8f9f9c9,#b94a4ac9,#794b0f) !important;
+  }
+
+
+  .innerCardFooter {
+  & .itemProgressBar {
+    & .itemProgressBarForeground {
+background: left linear-gradient(#ffffffc9,#23c6d7b2,#4ecebc) !important;
+    }
+  }
+}
+
+.layout-tv .detailRibbon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(213, 233, 242, 0.9); /* overlay tint */
+  backdrop-filter: blur(35px);
+  z-index: -1;
+}
+.layout-desktop .detailRibbon {
+  position: relative;
+  background: transparent;
+}
+
+.detailPageWrapperContainer {
+    background: rgba(30, 17, 17, 0.97);
+    background-size: cover;
+  }
+  
+.noBackdropTransparency .detailPagePrimaryContainer::before,
+.noBackdropTransparency .detailPageSecondaryContainer::before {
+background: rgba(213, 233, 242, 0.8) !important;
+    background-size: cover;
+}
+.skinHeader.semiTransparent {
+background: rgba(213, 233, 242, 0.8) !important;
+}
+.sectionTitleContainer.sectionTitleContainer-cards.padded-left {
+    background: rgba(249, 59, 63, 0.44);
+    backdrop-filter: blur(35px);
+    padding-top: 0.5em !important;
+  }
+.mainDetailButtons.focuscontainer-x {
+background:   background: rgba(213, 233, 242, 0.9); /* overlay tint */
+}
+.withSectionTabs .backgroundContainer.withBackdrop{
+background: #000000e5 !important;
+    background-size: cover;
+}
+.navMenuOption.lnkMediaFolder.btnSettings{
+  display: none;
+}
+
+#homeTab.tabContent.pageTabContent.is-active .sections.homeSectionsContainer .cardBox, .cardBox.cardBox-bottompadded {
+background: linear-gradient( rgba(244, 27, 27, 0.85),rgba(255, 255, 255, 0.37), rgba(187, 75, 75, 0.91) );
+    border-radius: 10px;
+    box-shadow: 0 0 .5em rgb(139, 79, 80);
+    margin: .5em 1.5em 1.5em 0 !important;
+    overflow: hidden;
+    transition: background .1s;
+}
+
+#liveTvSuggestedPage .cardBox.cardBox-bottompadded{
+background: linear-gradient( rgba(244, 27, 27, 0.85),rgba(255, 255, 255, 0.37), rgba(187, 75, 75, 0.91) );
+    border-radius: 10px;
+    box-shadow: 0 0 .5em rgb(139, 79, 80);
+    margin: .5em 1.5em 1.5em 0 !important;
+    overflow: hidden;
+    transition: background .1s;
+}
+
+#castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .cardBox.cardBox-bottompadded, #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .cardBox.cardBox-bottompadded{
+background: linear-gradient( rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3), rgba(196, 255, 191, 0.91) );
+  border-radius: 10px;
+  box-shadow: 0 0 .5em rgba(0,0,0,.75);
+  margin: .5em 1.5em 1.5em 0 !important;
+  overflow: hidden;
+  transition: background .1s;
+}
+#homeTab .sections.homeSectionsContainer .cardBox:has(a[href="#/livetv?collectionType=livetv"]) {
+  background: linear-gradient(rgba(213, 213, 213, 0.3), rgb(16, 77, 123), rgb(16, 77, 123), rgba(16, 123, 113, 0.53), rgb(18, 77, 119), rgba(27, 255, 148, 0.39) ) !important;
+color: white;
+}
+
+.layout-tv #homeTab.tabContent.pageTabContent.is-active .sections.homeSectionsContainer .verticalSection:has(h2[class="sectionTitle sectionTitle-cards">Recently Added in Boxsets (Backend)]) {
+display: none;
+}
+.skinHeader-withBackground{
+color: rgb(255, 70, 70);
+}
+
+#homeTab.tabContent.pageTabContent.is-active .sections.homeSectionsContainer .cardBox.cardBox-bottompadded:has(a[href="#/livetv?collectionType=livetv"]) {
+    box-shadow: 0 0 .5em rgb(15, 94, 144);
+  }
+  
+#castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .cardBox.cardBox-bottompadded, & #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .cardBox.cardBox-bottompadded{
+background: linear-gradient( rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3), rgba(70, 67, 166, 0.91) );
+    border-radius: 10px;
+    box-shadow: 0 0 .5em rgb(139, 79, 80);
+    margin: .5em 1.5em 1.5em 0 !important;
+    overflow: hidden;
+    transition: background .1s;
+  }
+  
+  .flex-grow{background: #400c0c80;}
+  .mainDrawer{background: #400c0c80;}
+  .material-icons.fiber_manual_record::before{color: red;}
+  
+  .cardOverlayButton {
+  &[data-action="resume"] {
+    &:hover, &:focus-visible {
+      filter: brightness(100%);
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .paper-icon-button-light:hover:not(:disabled) {
+    background-color: rgba(244, 9, 9, 0.2);
+  }
+}
+.detailRibbon {
+  background: rgba(32, 32, 32, 0.99);
+}
+
+.verticalSection.emby-scroller-container .emby-scrollbuttons.padded-right{
+margin-top: -10px;
+}
