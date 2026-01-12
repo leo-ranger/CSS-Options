@@ -808,6 +808,6 @@ background: linear-gradient( rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),r
 .verticalSection.emby-scroller-container .emby-scrollbuttons.padded-right{
 margin-top: -10px;
 }
-#videoOsdPage.page.libraryPage.mainAnimatedPage .videoOsdBottom.videoOsdBottom-maincontrols .osdControls .flex.flex-direction-row.align-items-center .sliderContainer.flex-grow.mdl-slider-container{
+#videoOsdPage.page.libraryPage.mainAnimatedPage .videoOsdBottom.videoOsdBottom-maincontrols .osdControls .flex.flex-direction-row.align-items-center .sliderContainer.flex-grow{
 background: #0000 !important;
 }
