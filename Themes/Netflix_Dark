@@ -144,6 +144,6 @@ background: linear-gradient( rgba(213, 213, 213, 0.3),rgba(213, 213, 213, 0.3),r
 .verticalSection.emby-scroller-container .emby-scrollbuttons.padded-right{
 margin-top: -10px;
 }
-#reactRoot div.mainAnimatedPages.skinBody div#videoOsdPage.page.libraryPage.mainAnimatedPage div.videoOsdBottom.videoOsdBottom-maincontrols.videoOsdBottom-hidden.hide div.osdControls div.flex.flex-direction-row.align-items-center div.sliderContainer.flex-grow.mdl-slider-container{
+#videoOsdPage.page.libraryPage.mainAnimatedPage .videoOsdBottom.videoOsdBottom-maincontrols .osdControls .flex.flex-direction-row.align-items-center .sliderContainer.flex-grow.mdl-slider-container{
 background: #0000 !important;
 }
